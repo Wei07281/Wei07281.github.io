@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <title>文件下载页面</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
         body {
+            background: url("background.png") no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-            padding-top: 100px;
         }
         .download-button {
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #4CAF50;
-            color: white;
+            width: 200px;
+            height: 60px;
+            background-image: url("bk1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             border: none;
-            border-radius: 6px;
             cursor: pointer;
-        }
-        .download-button:hover {
-            background-color: #45a049;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-
-    <h1>欢迎访问文件下载页面</h1>
-    <p>点击下面按钮即可下载：</p>
-
     <a href="miletang.txt" download>
         <button class="download-button">下载文件</button>
     </a>
-
 </body>
 </html>
